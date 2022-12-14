@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selectors</title>
+    <style>
+        /* *{
+            color:blue;
+        } */
+        header{
+            background-color: #f0ebeb;
+        }
+        section.my-articles{
+            background-color: #f2e9e9;
+        }
+        header p{
+            color:red;
+        }
+        li a{
+            color:red;
+        }
+        /* section.my-articles h2{
+            color:green;
+        } */
+        section.my-articles >h2{
+            color:green;
+        }
+        section.my-articles h2+p{
+            color:orangered;
+        }
+        ul+p{
+            color:green;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>short paragraph inside header</p>
+        <h1 class="main-logo">main logo</h1>
+        <ul>
+            <li> <a href="">Home</a></li>
+            <li> <a href="">About</a></li>
+            <li> <a href="">Contect</a></li>
+        </ul>
+        <p>short paragraph inside header</p>
+    </header>
+    <main>
+        <h2>Main content of our webpage</h2>
+
+        <section class=my-articles>
+            <h2>Articles section</h2>
+            <article>
+                <h2>Article heading</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore reiciendis quasi voluptate! Asperiores pariatur optio laudantium itaque? Fuga velit temporibus rerum eveniet id cum ut laudantium, atque quidem ducimus aperiam quas suscipit blanditiis inventore veniam amet recusandae! Illum officiis excepturi ratione eos dignissimos nihil, tenetur, ab ut dolorem quibusdam minus maxime consequatur obcaecati non. Debitis hic tempora ea saepe eum!</p>
+
+            </article>
+            <article>
+                <h2>Article heading</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt numquam, vitae praesentium ipsam inventore illum minima dolore quisquam ex nesciunt? Facilis neque corporis deleniti explicabo veniam adipisci quasi dolorem facere et modi eos aliquam reiciendis dolor, accusantium numquam perferendis pariatur soluta. Consequatur aspernatur obcaecati voluptatem assumenda repellendus eveniet nihil debitis dicta necessitatibus? Alias repudiandae nemo, magni odit incidunt harum tempora, ut sapiente iusto neque molestias ea nobis ipsum vero corrupti!</p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
